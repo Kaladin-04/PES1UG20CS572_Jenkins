@@ -14,6 +14,11 @@ pipeline{
         echo 'Test executed successfully'
       }
     }
+    stage('Deploy'){
+      steps{
+        echo 'Deployment executed successfully'
+      }
+    }
   }
   post{
     failure{
